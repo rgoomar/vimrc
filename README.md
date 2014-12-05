@@ -1,4 +1,4 @@
-Slava's vim setup
+Slava's vim setup modified for me (Rishi)
 ===
 
 This is my setup I've been using for the last 6 month or so. This configuration wasn't meant
@@ -34,6 +34,8 @@ Features
 - [Fugitive.vim](https://github.com/tpope/vim-fugitive) - git wrapper
 - [Tern.js](http://ternjs.net/) plugin with
   [Meteor support](https://github.com/Slava/tern-meteor) - like IntelliSense for JavaScript
+- NERDTree support
+  * `<leader><Tab>` - toggle tree
 
 Weird visual things you might want to change
 

@@ -7,9 +7,11 @@ if has('vim_starting')
   set runtimepath+=~/.vim/bundle/neobundle.vim/
 endif
 
-call neobundle#rc(expand('~/.vim/bundle/'))
+call neobundle#begin(expand('~/.vim/bundle/'))
 
 NeoBundleFetch 'Shougo/neobundle.vim'
+
+call neobundle#end()
 "}}}
 
 " Run and manage child processes, dependency of many other plugins "{{{
@@ -200,6 +202,10 @@ if has("gui_running")
 endif
 "}}}
 
+" NERDTree setup {{{
+NeoBundle "scrooloose/nerdtree"
+" }}}
+
 " ##Visual
 " Prettiness on the bottom {{{
 " That weird colorful line on the bottom
@@ -380,6 +386,9 @@ nnoremap <leader>p :Unite -start-insert history/yank<CR>
 nnoremap <leader>g :Unite -silent -start-insert menu:git<CR>
 " Open all menus with useful stuff
 nnoremap <leader>j :Unite -silent -start-insert menu:all menu:git<CR>
+" Open up nerdtree
+let NERDTreeShowHidden=1
+nnoremap <leader><Tab> :NERDTreeToggle<cr>
 " }}}
 
 " #Other mappings {{{
@@ -403,5 +412,4 @@ set shell=/bin/bash
 set wildignore=*.so,*.a,*.pyc,.meteor,.build.*,.git
 
 " This is good enough for folding and is not as slow as "syntax"
-set foldmethod=indent
-
+set foldmethod=manual
