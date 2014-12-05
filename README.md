@@ -108,7 +108,7 @@ After you can run the bash script from this repo which will take care of
 everything but will do something terrible if you already have any of `.vim` or
 `.vimrc`. But it works great on a clean set up:
 
-    $ curl https://raw.github.com/Slava/vimrc/master/install-script.sh > install-script.sh
+    $ curl https://raw.github.com/rgoomar/vimrc/master/install-script.sh > install-script.sh
     $ bash ./install-script.sh
 
 Manual installation
@@ -116,7 +116,7 @@ Manual installation
 
 Download `.vimrc` file.
 
-    $ curl https://raw.github.com/Slava/vimrc/master/.vimrc > ~/.vimrc
+    $ curl https://raw.github.com/rgoomar/vimrc/master/.vimrc > ~/.vimrc
 
 Install `neobundle`
 
